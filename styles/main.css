@@ -3,16 +3,20 @@ body {
     margin: 0 auto;
 }
 
-header {
-    background: url(../common/images/header-img.png) no-repeat center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
+:root {
+    --main-color: #3e9eff;
 }
 
 .align {
     width: 960px;
     margin: 0 auto;
+}
+
+header {
+    background: url(../common/images/header-image.png) no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
 
 .header-wrapper {
@@ -23,18 +27,18 @@ header {
     background: rgba(0,36,71,.79);
 }
 
-nav {
+header nav {
     padding: 15px;
     display: flex;
     justify-content: center;
 }
 
-nav li {
+header nav li {
     display: inline-block;
     border-left: 1px solid #2a94fb;
 }
 
-nav li:first-child {
+header nav li:first-child {
     border: none;
 }
 
@@ -44,7 +48,7 @@ nav li:first-child {
     background: url(../common/images/logo.png);
 }
 
-ul {
+.nav-wrapper ul {
     margin: 25px 0;
 }
 
@@ -56,15 +60,15 @@ li, a {
     list-style: none;
 }
 
-li .active {
+.nav-wrapper li .active {
     color: #fff;
 }
 
-a {
+.nav-wrapper a {
     margin: 15px;
 }
 
-a:hover {
+.nav-wrapper a:hover {
     color: #fff;
 }
 
@@ -76,7 +80,7 @@ a:hover {
     color: #fff;
 }
 
-.text-container h1 {
+.text-container h1, {
     margin: 10px;
     font: 700 72px 'Roboto';
 }
@@ -89,8 +93,7 @@ a:hover {
 .arrow-down {
     width: 108px;
     height: 110px;
-    margin: 0 auto;
-    margin-bottom: 20px; 
+    margin: 0 auto 20px;
     background: url(../common/images/arrow-down.png);
     cursor: pointer;
 }
@@ -100,7 +103,6 @@ main {
 }
 
 .main-title h3 {
-    margin-top: 0;
     padding-bottom: 5%;
     background: url(../common/images/mini-pulse.png) no-repeat;
     background-position: center bottom;
@@ -110,12 +112,12 @@ main {
 }
 
 .text-wrapper {
-    background-color: #3e9eff;
+    background-color: var(--main-color);
 }
 
 .text-wrapper p {
     margin: 0 15px;
-    padding: 15px 20px;
+    padding: 40px 25px;
     font: 700 28px 'Roboto';
     color: #fff;
     text-transform: uppercase;
@@ -128,13 +130,17 @@ main {
 }
 
 .services-wrapper .services {
-    margin: 75px 0;
+    margin: 120px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     font: 300 30px 'Roboto';
     text-transform: uppercase;
     border-bottom: 1px solid #dcdcdc;
+}
+
+.services-wrapper .services:nth-child(2) {
+    justify-content: space-around;
 }
 
 .services-wrapper p {
@@ -152,7 +158,7 @@ main {
 }
 
 .net .active {
-    background: #3e9eff;
+    background-color: var(--main-color);
 }
 
 .content-wrapper {
@@ -172,7 +178,8 @@ main {
 }
 
 .content:hover {
-    background: #3e9eff;
+    background-color: var(--main-color);
+    transition: 1s;
 }
 
 .content p {
@@ -204,13 +211,12 @@ main {
 }
 
 .buttons-container {
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.buttons-container .button, .button highlighted {
+.buttons-container .button, .button .highlighted {
     padding: 15px;
     background: #fff;
     color: #3b9dff;
@@ -220,14 +226,13 @@ main {
 }
 
  .button-text {
-    width: 50%;
     font: 700 36px 'Roboto';
     text-transform: uppercase;
     border: 1px solid transparent;
 }
 
 .buttons-container .button:hover {
-    background: #89c4ff; 
+    background-color: #89c4ff; 
     border: 1px solid transparent;
 }
 
@@ -264,7 +269,7 @@ main {
 .submit {
     padding: 10px 60px;
     font: 700 24px 'Roboto';
-    background: #3b9dff;
+    background-color: var(--main-color);
     color: white;
     text-transform: uppercase;
     border: none;
@@ -393,7 +398,7 @@ background: #f6f8fb;
 .feedback-button .submit {
     padding: 10px 60px;
     font: 700 24px 'Roboto';
-    background: #3b9dff;
+    background-color: var(--main-color);
     color: white;
     border: none;
     text-transform: uppercase;
@@ -405,7 +410,26 @@ background: #f6f8fb;
 }
 
 footer {
-    background: url(../common/images/footer-image.png);
+    background: url(../common/images/footer-image.png) no-repeat;
+    background-size: cover;
+}
+
+.p-aligning {
+    text-align: center;
+}
+
+.p-aligning p:first-child {
+    font: 700 28px 'Roboto';
+}
+
+.p-aligning p:nth-child(2) {
+    font: 300 28px 'Roboto';
+}
+
+.p-aligning p:nth-child(3) {
+    margin: 0 auto;
+    width: 35%;
+    font: 300 28px 'Roboto';
 }
 
 .footer-input {
@@ -422,4 +446,59 @@ footer {
     background: transparent;
     text-transform: uppercase;
     border: 1px solid black;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-social .fb-ic {
+    background: url(../common/images/fb-icon.png);
+}
+
+.footer-social .tw-ic {
+    background: url(../common/images/tw-icon.png);
+}
+
+.footer-social .g-ic {
+    background: url(../common/images/google-icon.png);
+}
+
+.footer-social .in-ic {
+    background: url(../common/images/linkedin-icon.png);
+}
+
+.footer-social .site-ic {
+    background: url(../common/images/site-icon.png);
+}
+
+.footer-social ul {
+    display: flex;
+}
+
+.footer-social a {
+    width: 46px;
+    height: 46px;
+    display: inline-block;
+    margin: 5px;
+}
+
+.footer-container {
+    background: rgba(0, 0, 0, .87);
+}
+
+.footer-container p {
+    margin: 0 auto;
+    padding: 50px;
+    font: 300 18px 'Roboto';
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.footer-container .low-text {
+    text-transform: lowercase;
+    text-decoration: underline;
 }
