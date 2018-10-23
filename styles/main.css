@@ -1,10 +1,14 @@
+:root {
+    --main-color: #3e9eff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
 	font-family: 'Roboto';
     margin: 0 auto;
-}
-
-:root {
-    --main-color: #3e9eff;
 }
 
 .align {
