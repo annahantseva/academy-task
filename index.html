@@ -45,33 +45,37 @@
                 <h1>Lorem ipsum</h1>
                 <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
             </div>
-            <div class="arrow-down"></div>
+            <a class="arrow-down" href="#mainContent"></a>
         </div>
     </header>
-    <main>
+    <main id="mainContent">
         <article class="services-container align">
-            <!-- <div class="align"> -->
             <div class="main-title">
                 <h3>Lorem ipsum</h3>
             </div>
             <div class="text-wrapper">
-                <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.</p>
-                <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <p>Lorem ipsum is simply dummy textof the printing and typesetting industry.</p>
+                <p>Lorem ipsum is simply dummy text the printing and typesetting industry.</p>
             </div>
             <section class="services-wrapper">
                 <section class="services">
                     <img src="common/images/devices.png">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <p>Lorem Ipsum is simply dummy text
+                        <span class="mob-hiddentext">of the printing and typesetting industry.</span>
+                    </p>
                 </section>
                 <section class="services">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <p>Lorem Ipsum is simply dummy text
+                        <span class="mob-hiddentext">of the printing and typesetting industry.</span>
+                    </p>
                     <img src="common/images/puzzle.png">
                 </section>
                 <section class="services">
                     <img src="common/images/connection.png">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <p>Lorem Ipsum is simply dummy text
+                        <span class="mob-hiddentext">of the printing and typesetting industry.</span>
+                    </p>
                 </section>
-                <!-- </div> -->
         </article>
         <article class="net-container">
             <div class="align">
@@ -81,7 +85,7 @@
                 <div class="text-wrapper">
                     <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.</p>
                 </div>
-                <div class="test">
+                <div class="netContent">
                     <div class="net-wrapper">
                         <div class="net">
                             <div class="content-wrapper">
@@ -134,111 +138,119 @@
                     </div>
                 </div>
         </article>
-        <article class="feedback-container align">
-            <!-- <div class="align"> -->
-            <div class="main-title">
-                <h3>Lorem ipsum</h3>
-            </div>
-            <section class="buttons-container">
-                <input type="button" class="button" value="lorem ipsum is simply">
-                <p class="button-text">lorem ipsum is simply</p>
-                <input type="button" class="button highlighted" value="lorem ipsum is simply">
-            </section>
-            <section class="popup">
-                <a href="#" class="close-button"></a>
-                <div class="input-popup">
-                    <input type="text" class="form" placeholder="lorem ipsum">
-                    <input type="text" class="form" placeholder="lorem ipsum">
-                    <input type="text" class="form" placeholder="lorem ipsum">
-                    <input type="text" class="form" placeholder="lorem ipsum">
-                    <input type="text" class="form" placeholder="lorem ipsum">
-                    <div class="checkbox-wrapper">
-                        <p>Lorem ipsum is simply dummy</p>
-                        <input type="checkbox" class="checkbox">
-                    </div>
-                    <input type="button" class="submit" value="submit">
-                </div>
-            </section>
-            <!-- </div> -->
-        </article>
-        <article class="news">
-            <div class="align">
+        <div id="mob-hiddencontent">
+            <article class="feedback-container full-width">
                 <div class="main-title">
                     <h3>Lorem ipsum</h3>
                 </div>
-                <section class="news-block">
-                    <div class="news-wrapper">
-                        <p class="news-name net-aligning">Lorem Ipsum is simply dummy text of the printing and </p>
-                        <p class="news-description net-aligning">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <img src="common/images/publication1.png" class="news-image net-aligning">
+                <section class="buttons-container">
+                    <input type="button" class="button" value="lorem ipsum is simply">
+                    <p class="button-text">lorem ipsum is simply</p>
+                    <input type="button" class="button highlighted" value="lorem ipsum is simply">
+                </section>
+                <section class="popup align">
+                    <a href="#" class="close-button"></a>
+                    <div class="input-popup">
+                        <div class="input-aligning">
+                            <input type="text" class="form" placeholder="lorem ipsum">
+                            <input type="text" class="form" placeholder="lorem ipsum">
+                            <input type="text" class="form" placeholder="lorem ipsum">
+                            <input type="text" class="form" placeholder="lorem ipsum">
+                            <input type="text" class="form" placeholder="lorem ipsum">
+                            <label class="checkbox-wrapper">
+                                Lorem ipsum is simply dummy
+                                <input type="checkbox" class="checkbox">
+                            </label>
+                        </div>
+                        <input type="button" class="submit" value="submit">
                     </div>
                 </section>
-                <section class="news-block">
-                    <div class="news-wrapper">
-                        <img src="common/images/publication2.png" class="news-image net-aligning">
-                        <p class="news-description net-aligning">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <p class="news-name net-aligning">Lorem Ipsum is simply dummy text of the printing and </p>
+            </article>
+            <article class="news">
+                <div class="align">
+                    <div class="main-title">
+                        <h3>Lorem ipsum</h3>
                     </div>
-                </section>
-                <section class="news-block">
-                    <div class="news-wrapper">
-                        <p class="news-name net-aligning">Lorem Ipsum is simply dummy text of the printing and </p>
-                        <p class="news-description net-aligning">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <img src="common/images/publication3.png" class="news-image net-aligning">
-                    </div>
-                </section>
-            </div>
-        </article>
-        <article class="contact-us">
-            <div class="align">
-                <div class="main-title">
-                    <h3>Lorem ipsum</h3>
+                    <section class="news-block">
+                        <div class="news-wrapper">
+                            <p class="news-name net-aligning">Lorem Ipsum is simply dummy text of the printing and </p>
+                            <p class="news-description net-aligning">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <img src="common/images/publication1.png" class="news-image net-aligning">
+                        </div>
+                    </section>
+                    <section class="news-block">
+                        <div class="news-wrapper">
+                            <img src="common/images/publication2.png" class="news-image net-aligning">
+                            <p class="news-description net-aligning">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <p class="news-name net-aligning">Lorem Ipsum is simply dummy text of the printing and </p>
+                        </div>
+                    </section>
+                    <section class="news-block">
+                        <div class="news-wrapper">
+                            <p class="news-name net-aligning">Lorem Ipsum is simply dummy text of the printing and </p>
+                            <p class="news-description net-aligning">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <img src="common/images/publication3.png" class="news-image net-aligning">
+                        </div>
+                    </section>
                 </div>
-                <div class="text-wrapper">
-                    <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.</p>
-                </div>
-                <div class="main-title">
-                    <h3>Lorem ipsum</h3>
-                </div>
-                <section class="contact-us-form container">
-                    <input type="text" class="form" placeholder="lorem ipsum">
-                    <input type="text" class="form" placeholder="lorem ipsum">
-                    <textarea name="textarea" rows="10" cols="50">lorem ipsum</textarea>
-                    <div class="feedback-button">
-                        <input type="button" class="submit" value="lorem ipsum">
+            </article>
+            <article class="contact-us">
+                <div class="align">
+                    <div class="main-title">
+                        <h3>Lorem ipsum</h3>
                     </div>
-                </section>
-            </div>
-        </article>
+                    <div class="text-wrapper">
+                        <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                    <div class="main-title">
+                        <h3>Lorem ipsum</h3>
+                    </div>
+                    <section class="contact-us-form container">
+                        <div class="input-aligning">
+                            <input type="text" class="form" placeholder="lorem ipsum">
+                            <input type="text" class="form" placeholder="lorem ipsum">
+                            <textarea name="textarea" rows="10" cols="50">lorem ipsum</textarea>
+                        </div>
+                        <div class="feedback-button">
+                            <input type="button" class="submit" value="lorem ipsum">
+                        </div>
+                    </section>
+                </div>
+            </article>
+        </div>
     </main>
     <footer>
-        <div class="align">
+        <div class="full-width">
             <div class="main-title">
                 <h3>Lorem ipsum</h3>
             </div>
             <div class="p-aligning">
                 <p>Lorem Ipsum</p>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and
+                    <span class="mob-hiddentext"> typesetting industry.</span>
+                </p>
                 <p>Lorem Ipsum is simply dummy text</p>
             </div>
             <div class="main-title">
                 <h3>Lorem ipsum</h3>
             </div>
-            <img src="common/images/footer-map.png">
-            <div class="footer-input">
-                <input type="text" class="footer-form" placeholder="lorem ipsum">
-                <input type="text" class="footer-form" placeholder="lorem ipsum">
-                <input type="text" class="footer-form" placeholder="lorem ipsum">
-                <input type="text" class="footer-form" placeholder="lorem ipsum">
-                <input type="text" class="footer-form" placeholder="lorem ipsum">
-                <input type="text" class="footer-form" placeholder="lorem ipsum">
+            <div class="footerMain">
+                <img class="footer-map" src="common/images/footer-map.png">
+                <div class="footer-input">
+                    <input type="text" class="footer-form" placeholder="lorem ipsum">
+                    <input type="text" class="footer-form" placeholder="lorem ipsum">
+                    <input type="text" class="footer-form" placeholder="lorem ipsum">
+                    <input type="text" class="footer-form" placeholder="lorem ipsum">
+                    <input type="text" class="footer-form" placeholder="lorem ipsum">
+                    <input type="text" class="footer-form" placeholder="lorem ipsum">
+                    <label class="checkbox-wrapper">
+                        Lorem ipsum is simply dummy
+                        <input type="checkbox" class="checkbox">
+                    </label>
+                    <input type="button" class="submit" value="submit">
+                </div>
             </div>
-            <div class="checkbox-wrapper">
-                <p>Lorem ipsum is simply dummy</p>
-                <input type="checkbox" class="checkbox">
-            </div>
-            <input type="button" class="submit" value="submit">
         </div>
         <div class="footer-social">
             <ul>

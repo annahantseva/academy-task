@@ -16,6 +16,14 @@ body {
     margin: 0 auto;
 }
 
+.full-width {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;    
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
 header {
     background: url(../common/images/header-image.png) no-repeat center;
     background-size: cover;
@@ -31,6 +39,16 @@ header {
     background: rgba(0,36,71,.79);
 }
 
+.logo {
+    width: 219px;
+    height: 63px;
+    background: url(../common/images/logo.png);
+}
+
+.nav-wrapper ul {
+    margin: 25px 0;
+}
+
 header nav {
     padding: 15px;
     display: flex;
@@ -44,16 +62,6 @@ header nav li {
 
 header nav li:first-child {
     border: none;
-}
-
-.logo {
-    width: 219px;
-    height: 63px;
-    background: url(../common/images/logo.png);
-}
-
-.nav-wrapper ul {
-    margin: 25px 0;
 }
 
 li, a {
@@ -84,7 +92,7 @@ li, a {
     color: #fff;
 }
 
-.text-container h1, {
+.text-container h1 {
     margin: 10px;
     font: 700 72px 'Roboto';
 }
@@ -95,6 +103,7 @@ li, a {
 }
 
 .arrow-down {
+    display: block;
     width: 108px;
     height: 110px;
     margin: 0 auto 20px;
@@ -148,7 +157,7 @@ main {
 }
 
 .services-wrapper p {
-    width: 41%;
+    width: 40%;
 }
 
 .net-wrapper {
@@ -176,6 +185,8 @@ main {
     height: 200px;
     position: relative;
     display: flex;
+    justify-content: center;
+    align-items: center;
     align-items: center;
     background: #ddd;
     overflow: hidden;
@@ -198,17 +209,11 @@ main {
     text-transform: uppercase;
 }
 
-.content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .content img {
     transform: rotate(45deg);
 }
 
-.test {
+.netContent {
     padding-bottom: 25%;
     display: flex;
     justify-content: center;
@@ -216,7 +221,7 @@ main {
 
 .buttons-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -233,6 +238,8 @@ main {
     font: 700 36px 'Roboto';
     text-transform: uppercase;
     border: 1px solid transparent;
+    text-align: center;
+    margin: 10px;
 }
 
 .buttons-container .button:hover {
@@ -242,18 +249,30 @@ main {
 
 .popup {
     width: 100%;
-    padding: 30px;
+    position: relative;
+    padding: 40px 50px;
     border: 1px solid #dadada;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+
+.input-aligning {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .popup .input-popup {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: flex-end;
 }
 
 .popup .close-button {
+    position: absolute;
+    top: 20px;
+    right: 25px;
     width: 30px;
     height: 30px;
     display: flex;
@@ -261,8 +280,8 @@ main {
 }
 
 .input-popup .form {
-    width: 43%;
-    margin: 25px;
+    width: 48%;
+    margin: 25px 0;
     padding: 10px;
     font: 900 24px 'Roboto';
     box-sizing: border-box;
@@ -271,6 +290,7 @@ main {
 }
 
 .submit {
+    margin: 40px 0;
     padding: 10px 60px;
     font: 700 24px 'Roboto';
     background-color: var(--main-color);
@@ -282,16 +302,15 @@ main {
 
 .checkbox-wrapper {
     display: flex;
-    flex-wrap: nowrap;
     align-items: center;
     font: 500 24px 'Roboto';
     text-transform: uppercase;
 }
 
-.input-popup .checkbox {
+.checkbox {
     width: 50px;
     height: 50px;
-    display: inline-block;
+    margin-left: 10px;
 }
 
 .checkbox-wrapper input[type="checkbox"]:before {
@@ -330,10 +349,12 @@ background: #f6f8fb;
 
 .net-aligning {
     width: 310px;
+    max-width: 34%;
     height: 280px;
     padding: 10px 15px;
     border: 1px solid #d0d0d0;
     border-width: 1px 0;
+    box-sizing: border-box;
 }
 
 .net-aligning:nth-child(2) {
@@ -378,12 +399,14 @@ background: #f6f8fb;
 
 .contact-us-form {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     flex-wrap: wrap;
+    align-items: center;
+    margin: 0 10px;
 }
 
 .contact-us-form .form, textarea {
-    margin: 20px;
+    margin: 20px 0;
     padding: 10px;
     font: 500 24px 'Roboto';
     background: transparent;
@@ -397,16 +420,6 @@ background: #f6f8fb;
 
 .contact-us-form textarea {
     width: 100%;
-}
-
-.feedback-button .submit {
-    padding: 10px 60px;
-    font: 700 24px 'Roboto';
-    background-color: var(--main-color);
-    color: white;
-    border: none;
-    text-transform: uppercase;
-    cursor: pointer;
 }
 
 ::placeholder {
@@ -436,15 +449,34 @@ footer {
     font: 300 28px 'Roboto';
 }
 
-.footer-input {
+.footerMain {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.footer-wrapper {
+    display: flex;
+}
+
+.footer-map {
+    width: 500px;
+    max-width: 100%;
+}
+
+.footer-input {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex-grow: 1;
 }
 
 .footer-input .footer-form {
-    width: 45%;
-    margin: 10px;
+    width: 100%;
+    max-width: 450px;
+    margin: 10px 0;
     padding: 10px;
     font: 500 24px 'Roboto';
     background: transparent;
@@ -506,3 +538,84 @@ footer {
     text-transform: lowercase;
     text-decoration: underline;
 }
+
+@media (max-width: 959px) {
+    .align {
+        width: 100%;
+    }
+
+    .netContent {
+        margin-top: 170px;
+    }
+    
+    .net-wrapper {
+        transform: rotate(-90deg);
+    }
+
+    .net {
+        display: inline-flex;
+      }
+
+      .content-wrapper {
+        transform: rotate(45deg);
+        margin: 45px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .mob-hiddentext {
+        display: none;
+    }
+
+    #mob-hiddencontent {
+        display: none;
+    }
+
+    .main-title h3 {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .text-wrapper {
+        width: 100%;
+    }
+
+    .services-wrapper .services {
+        margin: 20px 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .services img {
+        width: 100%;
+    }
+
+    .services-wrapper p {
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .services-wrapper .services:nth-child(2) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    footer {
+        color: #373737;
+        font-weight: 500;
+    }
+
+    .p-aligning p:nth-child(2), .p-aligning p:nth-child(3) {
+        width: 95%;
+        font-weight: 500;
+    }
+
+    .footer-container p {
+        padding: 20px;
+    }
+
+
+} 
